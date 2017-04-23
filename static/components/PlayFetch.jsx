@@ -20,9 +20,6 @@ class PlayFetch extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Hello!</h1>
-				<h3>Clicked {this.state.counter} times</h3>
-				<Button onClick={this.onClickHandler}>Click me!</Button>
 				<PlayLogin updateLoginState={this.props.loginUpdater}/>
 			</div>
 		)
