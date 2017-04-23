@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dhamaniasad/play-pandora#readme",
   "dependencies": {
     "anesidora": "^1.2.1",
+    "express": "^4.15.2",
     "playmusic": "^2.2.1"
   }
 }
