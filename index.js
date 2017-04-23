@@ -5,8 +5,8 @@ const Anesidora = require("anesidora");
 
 let app = express();
 
-app.get("/", (req, res) => {
-	res.send('Hello World!');
+app.get("*", (req, res) => {
+	res.sendFile(`${__dirname}/client/index.html`);
 });
 
 let pandora = new Anesidora(process.env.PANDORA_ID, process.env.PANDORA_PASS);

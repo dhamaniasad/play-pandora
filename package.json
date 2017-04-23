@@ -24,6 +24,9 @@
   "dependencies": {
     "anesidora": "^1.2.1",
     "express": "^4.15.2",
-    "playmusic": "^2.2.1"
+    "playmusic": "^2.2.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1"
   }
 }
