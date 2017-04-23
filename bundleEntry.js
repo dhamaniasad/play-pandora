@@ -1,1 +1,1 @@
-import App from "./static/hello.jsx";
+import App from "./static/index.jsx";

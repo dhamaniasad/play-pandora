@@ -4,7 +4,7 @@
   "description": "Create a Pandora station from a Play Music Playlist",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack && node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "nunjucks": "^3.0.0",
     "playmusic": "^2.2.1",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.30.10",
     "react-dom": "^15.5.4",
     "react-router": "^4.1.1"
   },
@@ -37,8 +38,5 @@
     "babel-preset-react": "^6.24.1",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4"
-  },
-  "scripts": {
-    "start": "webpack && node index.js"
   }
 }

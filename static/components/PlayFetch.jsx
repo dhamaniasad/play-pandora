@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-class Hello extends React.Component {
+class PlayFetch extends React.Component {
 	render() {
 		return (
 			<div>
@@ -12,4 +12,4 @@ class Hello extends React.Component {
 	}
 }
 
-export default Hello;
+export default PlayFetch;
