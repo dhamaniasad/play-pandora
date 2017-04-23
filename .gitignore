@@ -235,3 +235,5 @@ GitHub.sublime-settings
 !.vscode/extensions.json
 
 # End of https://www.gitignore.io/api/visualstudiocode
+
+/static/bundle.js

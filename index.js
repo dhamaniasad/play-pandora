@@ -1,3 +1,5 @@
+// Inspiration: https://github.com/sagnew/CallStatusDashboard
+
 const express = require("express");
 
 const PlayMusic = require("playmusic");
@@ -7,13 +9,15 @@ const nunjucks = require("nunjucks");
 
 let app = express();
 
+app.use(express.static('static'));
+
 nunjucks.configure('views', {
 	autoescape: true,
 	express: app
 });
 
 app.get("/", (req, res) => {
-	res.render('pages/index.html');
+	res.sendFile(__dirname + '/views/index.html');
 });
 
 // let pandora = new Anesidora(process.env.PANDORA_ID, process.env.PANDORA_PASS);
