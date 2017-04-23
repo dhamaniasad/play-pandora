@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import PlayLogin from "./PlayLogin.jsx"
 
 class PlayFetch extends React.Component {
 	constructor(props) {
@@ -22,6 +23,7 @@ class PlayFetch extends React.Component {
 				<h1>Hello!</h1>
 				<h3>Clicked {this.state.counter} times</h3>
 				<Button onClick={this.onClickHandler}>Click me!</Button>
+				<PlayLogin/>
 			</div>
 		)
 	}
