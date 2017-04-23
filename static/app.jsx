@@ -6,16 +6,23 @@ class App extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {playLoggedIn: false, pandoraLoggedIn: false};
+		this.state = {
+			playLoggedIn: false,
+			pandoraLoggedIn: false,
+			playEmail: '',
+			playPass: '',
+			pandoraEmail: '',
+			pandoraPass: ''
+		};
 
 		this.updateLoginState = this.updateLoginState.bind(this);
 	}
 
-	updateLoginState(service) {
+	updateLoginState(service, state) {
 		if (service === "play") {
-			this.setState({playLoggedIn: true});
+			this.setState({playLoggedIn: state});
 		} else if (service === "pandora") {
-			this.setState({pandoraLoggedIn: true});
+			this.setState({pandoraLoggedIn: state});
 		}
 	}
 

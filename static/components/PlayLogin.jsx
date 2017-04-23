@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, FormControl, ControlLabel, HelpBlock, Button } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, HelpBlock, Button, Alert } from 'react-bootstrap';
 
 class PlayLogin extends React.Component {
 	constructor(props) {
@@ -8,7 +8,8 @@ class PlayLogin extends React.Component {
 			login: null,
 			value: '',
 			email: '',
-			password: ''
+			password: '',
+			loginFailed: false
 		};
 
 		// Sad. https://www.crestify.com/public/V604
@@ -27,8 +28,11 @@ class PlayLogin extends React.Component {
 		});
 		fetch('/playlogin', {method: 'POST', body: data, headers: headers}).then((res) => {
 			if (res.ok) {
-				this.setState({login: true});
-				this.props.updateLoginState("play");
+				this.setState({loginFailed: false});
+				this.props.updateLoginState("play", true);
+			} else {
+				this.setState({loginFailed: true});
+				this.props.updateLoginState("play", false);
 			}
 			// Login failed :(
 		});
@@ -43,9 +47,18 @@ class PlayLogin extends React.Component {
 	}
 
 	render() {
+
+		const loginFailed = this.state.loginFailed;
+
 		return (
 			<div>
 				<form>
+				{loginFailed ? (
+						<Alert bsStyle="danger">
+							<h4>Oops! Looks like login to Google Play has failed :(</h4>
+							<p>Please double-check your email and password combination, or try again later.</p>
+						</Alert>
+					) : (null)}
 					<FormGroup
 						controlId="formBasicText"
 					>
