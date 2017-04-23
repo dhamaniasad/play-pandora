@@ -1,0 +1,24 @@
+{
+  "name": "play-pandora",
+  "version": "1.0.0",
+  "description": "Create a Pandora station from a Play Music Playlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhamaniasad/play-pandora.git"
+  },
+  "keywords": [
+    "pandora",
+    "google",
+    "play"
+  ],
+  "author": "Asad Dhamani <dhamaniasad@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/dhamaniasad/play-pandora/issues"
+  },
+  "homepage": "https://github.com/dhamaniasad/play-pandora#readme"
+}
