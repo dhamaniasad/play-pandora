@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dhamaniasad/play-pandora/issues"
   },
-  "homepage": "https://github.com/dhamaniasad/play-pandora#readme"
+  "homepage": "https://github.com/dhamaniasad/play-pandora#readme",
+  "dependencies": {
+    "playmusic": "^2.2.1"
+  }
 }
