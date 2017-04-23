@@ -24,6 +24,7 @@
   "dependencies": {
     "anesidora": "^1.2.1",
     "express": "^4.15.2",
+    "nunjucks": "^3.0.0",
     "playmusic": "^2.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
