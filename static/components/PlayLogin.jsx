@@ -26,7 +26,11 @@ class PlayLogin extends React.Component {
 			'Content-Type': 'application/json'
 		});
 		fetch('/playlogin', {method: 'POST', body: data, headers: headers}).then((res) => {
-			this.setState({login: true});
+			if (res.ok) {
+				this.setState({login: true});
+				this.props.updateLoginState("play");
+			}
+			// Login failed :(
 		});
 	}
 

@@ -23,7 +23,7 @@ class PlayFetch extends React.Component {
 				<h1>Hello!</h1>
 				<h3>Clicked {this.state.counter} times</h3>
 				<Button onClick={this.onClickHandler}>Click me!</Button>
-				<PlayLogin/>
+				<PlayLogin updateLoginState={this.props.loginUpdater}/>
 			</div>
 		)
 	}
